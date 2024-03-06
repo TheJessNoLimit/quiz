@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="quiz-div">
+        <h2>Викторина!</h2>
+        <p>Вопрос 1. Самый большой континент?</p>
+        <button onclick="anwser1(1, true)" class="buttons1" id="b1">Евразия</button> <!-- 1 -->
+        <button onclick="anwser1(1, false)" class="buttons1" id="b2">Африка</button>
+        <button onclick="anwser1(1, false)" class="buttons1" id="b3">Северная Америка</button> 
+
+        <p>Вопрос 2. Самый большой океан?</p>
+        <button onclick="anwser2(2, false)" id="c1">Тихий океан</button> 
+        <button onclick="anwser2(2, false)" id="c2">Индийский</button>
+        <button onclick="anwser2(2, true)" id="c3">Атлантический</button> <!-- 1 -->
+
+        <p>Вопрос 3. Формула углекислого газа?</p>
+        <button onclick="anwser3(3, true)" id="d1">CO2</button> <!-- 1 -->
+        <button onclick="anwser3(3, false)" id="d2">H2O</button>
+        <button onclick="anwser3(3, false)" id="d3">O3</button> 
+
+        <p>Вопрос 4. Что больше?</p>
+        <button onclick="anwser4(4, false)" id="g1">Япония</button> 
+        <button onclick="anwser4(4, false)" id="g2">Южная Корея</button>
+        <button onclick="anwser4(4, true)" id="g3">Северная Корея</button> <!-- 1 -->
+
+        <p>Вопрос 5. Формула воды?</p>
+        <button onclick="anwser5(5, false)" id="a1">CH4</button> 
+        <button onclick="anwser5(5, true)" id="a2">H2O</button> <!-- 1 -->
+        <button onclick="anwser5(5, false)" id="a3">NaCl</button> 
+
+        <div id="replydiv">
+             
+        </div>
+        <button class="restart-btn" onclick="location.reload()">Пройти заново</button>
+    </div>
+</body>
+</html>
